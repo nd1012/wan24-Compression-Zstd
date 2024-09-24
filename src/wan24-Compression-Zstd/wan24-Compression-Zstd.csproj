@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>wan24.Compression.Zstd</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>wan24CompressionZstd</AssemblyName>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageId>wan24-Compression-Zstd</PackageId>
+    <Title>wan24-Compression-Zstd</Title>
+    <Version>2.11.0</Version>
+    <Authors>nd1012</Authors>
+    <Company>Andreas Zimmermann, wan24.de</Company>
+    <Product>wan24-Compression-Zstd</Product>
+    <Description>Zstd adoption for wan24-Compression</Description>
+    <Copyright>(c)2024 Andreas Zimmermann, wan24.de</Copyright>
+    <PackageProjectUrl>https://github.com/nd1012/wan24-Compression-Zstd</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/nd1012/wan24-Compression-Zstd</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>compression,zstd</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <DebugType>embedded</DebugType>
+    <EmbedAllSources>true</EmbedAllSources>
+    <Configurations>Debug;Release;Trunk</Configurations>
+  </PropertyGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(OS)' == 'Windows_NT'">
+    <Exec Command="copy /Y &quot;$(ProjectDir)..\..\README.md&quot; &quot;$(ProjectDir)README.md&quot;&#xD;&#xA;" />
+  </Target>
+
+  <ItemGroup>
+    <PackageReference Include="wan24-Compression" Version="2.12.0" Condition="'$(Configuration)' != 'Trunk'" />
+    <PackageReference Include="ZstdSharp.Port" Version="0.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ObjectValidation\src\ObjectValidation\ObjectValidation.csproj" Condition="'$(Configuration)' == 'Trunk'" />
+    <ProjectReference Include="..\..\..\Stream-Serializer-Extensions\src\Stream-Serializer-Extensions\Stream-Serializer-Extensions.csproj" Condition="'$(Configuration)' == 'Trunk'" />
+    <ProjectReference Include="..\..\..\wan24-Core\src\Wan24-Core\Wan24-Core.csproj" Condition="'$(Configuration)' == 'Trunk'" />
+  </ItemGroup>
+
+</Project>

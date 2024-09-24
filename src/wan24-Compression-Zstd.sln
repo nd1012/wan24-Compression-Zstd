@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35309.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wan24-Compression-Zstd", "wan24-Compression-Zstd\wan24-Compression-Zstd.csproj", "{D259E229-EBC6-45CF-B4EE-39F6CA0E770D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wan24-Compression-Zstd Tests", "wan24-Compression-Zstd Tests\wan24-Compression-Zstd Tests.csproj", "{2DAC90C1-26E5-4903-AFDE-D2E67DB67DF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Referenced", "Referenced", "{4EDB9528-639C-4BE6-AAC2-D865E127466F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wan24-Core", "..\..\wan24-Core\src\Wan24-Core\Wan24-Core.csproj", "{7DB09843-BA82-4B08-8278-6FEBDD92D715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectValidation", "..\..\ObjectValidation\src\ObjectValidation\ObjectValidation.csproj", "{62099FED-E004-498F-91E7-9DCA591AF385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream-Serializer-Extensions", "..\..\Stream-Serializer-Extensions\src\Stream-Serializer-Extensions\Stream-Serializer-Extensions.csproj", "{83ECA72B-CD2B-44E9-AEDE-D712A8FC3118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wan24-Compression", "..\..\wan24-Compression\src\wan24-Compression\wan24-Compression.csproj", "{BFAE15B1-187C-4831-BCF5-4FE547F946C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Trunk|Any CPU = Trunk|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D259E229-EBC6-45CF-B4EE-39F6CA0E770D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D259E229-EBC6-45CF-B4EE-39F6CA0E770D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D259E229-EBC6-45CF-B4EE-39F6CA0E770D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D259E229-EBC6-45CF-B4EE-39F6CA0E770D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D259E229-EBC6-45CF-B4EE-39F6CA0E770D}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
+		{D259E229-EBC6-45CF-B4EE-39F6CA0E770D}.Trunk|Any CPU.Build.0 = Trunk|Any CPU
+		{2DAC90C1-26E5-4903-AFDE-D2E67DB67DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAC90C1-26E5-4903-AFDE-D2E67DB67DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAC90C1-26E5-4903-AFDE-D2E67DB67DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAC90C1-26E5-4903-AFDE-D2E67DB67DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DAC90C1-26E5-4903-AFDE-D2E67DB67DF9}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
+		{2DAC90C1-26E5-4903-AFDE-D2E67DB67DF9}.Trunk|Any CPU.Build.0 = Trunk|Any CPU
+		{7DB09843-BA82-4B08-8278-6FEBDD92D715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB09843-BA82-4B08-8278-6FEBDD92D715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB09843-BA82-4B08-8278-6FEBDD92D715}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
+		{7DB09843-BA82-4B08-8278-6FEBDD92D715}.Trunk|Any CPU.Build.0 = Trunk|Any CPU
+		{62099FED-E004-498F-91E7-9DCA591AF385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62099FED-E004-498F-91E7-9DCA591AF385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62099FED-E004-498F-91E7-9DCA591AF385}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
+		{62099FED-E004-498F-91E7-9DCA591AF385}.Trunk|Any CPU.Build.0 = Trunk|Any CPU
+		{83ECA72B-CD2B-44E9-AEDE-D712A8FC3118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83ECA72B-CD2B-44E9-AEDE-D712A8FC3118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83ECA72B-CD2B-44E9-AEDE-D712A8FC3118}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
+		{83ECA72B-CD2B-44E9-AEDE-D712A8FC3118}.Trunk|Any CPU.Build.0 = Trunk|Any CPU
+		{BFAE15B1-187C-4831-BCF5-4FE547F946C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFAE15B1-187C-4831-BCF5-4FE547F946C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFAE15B1-187C-4831-BCF5-4FE547F946C3}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
+		{BFAE15B1-187C-4831-BCF5-4FE547F946C3}.Trunk|Any CPU.Build.0 = Trunk|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DB09843-BA82-4B08-8278-6FEBDD92D715} = {4EDB9528-639C-4BE6-AAC2-D865E127466F}
+		{62099FED-E004-498F-91E7-9DCA591AF385} = {4EDB9528-639C-4BE6-AAC2-D865E127466F}
+		{83ECA72B-CD2B-44E9-AEDE-D712A8FC3118} = {4EDB9528-639C-4BE6-AAC2-D865E127466F}
+		{BFAE15B1-187C-4831-BCF5-4FE547F946C3} = {4EDB9528-639C-4BE6-AAC2-D865E127466F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {584797E4-716C-40C2-B335-6173649EC973}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\wan24-Core\src\Others\wan24-Core-Shared\src\wan24-Core-Shared\wan24-Core-Shared.projitems*{7db09843-ba82-4b08-8278-6febdd92d715}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
