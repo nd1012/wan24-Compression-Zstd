@@ -1,0 +1,32 @@
+{
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "API reference | wan24-Compression-Zstd",
+    "keywords": "API reference Choose a type from the left to start browsing."
+  },
+  "api/wan24.Compression.Zstd.Bootstrap.html": {
+    "href": "api/wan24.Compression.Zstd.Bootstrap.html",
+    "title": "Class Bootstrap | wan24-Compression-Zstd",
+    "keywords": "Class Bootstrap Bootstrapper Inheritance object Bootstrap Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: wan24.Compression.Zstd Assembly: wan24CompressionZstd.dll Syntax public static class Bootstrap Methods | Edit this page View Source Boot() Boot Declaration public static void Boot()"
+  },
+  "api/wan24.Compression.Zstd.ZstdCompressionAlgorithm.html": {
+    "href": "api/wan24.Compression.Zstd.ZstdCompressionAlgorithm.html",
+    "title": "Class ZstdCompressionAlgorithm | wan24-Compression-Zstd",
+    "keywords": "Class ZstdCompressionAlgorithm zstd compression algorithm Inheritance object CompressionAlgorithmBase ZstdCompressionAlgorithm Implements IStatusProvider IEquatable<CompressionAlgorithmBase> IEquatable<ZstdCompressionAlgorithm> Inherited Members CompressionAlgorithmBase.Compress(Stream, Stream, CompressionOptions) CompressionAlgorithmBase.CompressAsync(Stream, Stream, CompressionOptions, CancellationToken) CompressionAlgorithmBase.GetCompressionStream(Stream, CompressionOptions) CompressionAlgorithmBase.Decompress(Stream, Stream, CompressionOptions) CompressionAlgorithmBase.DecompressAsync(Stream, Stream, CompressionOptions, CancellationToken) CompressionAlgorithmBase.GetDecompressionStream(Stream, CompressionOptions) CompressionAlgorithmBase.WriteOptions(Stream, Stream, CompressionOptions) CompressionAlgorithmBase.WriteOptionsAsync(Stream, Stream, CompressionOptions, CancellationToken) CompressionAlgorithmBase.ReadOptions(Stream, Stream, CompressionOptions) CompressionAlgorithmBase.ReadOptionsAsync(Stream, Stream, CompressionOptions, CancellationToken) CompressionAlgorithmBase.ToString() CompressionAlgorithmBase.GetHashCode() CompressionAlgorithmBase.Equals(object) CompressionAlgorithmBase.Equals(CompressionAlgorithmBase) CompressionAlgorithmBase.<Clone>$() CompressionAlgorithmBase.Name CompressionAlgorithmBase.Value CompressionAlgorithmBase.DefaultOptions CompressionAlgorithmBase.State object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Namespace: wan24.Compression.Zstd Assembly: wan24CompressionZstd.dll Syntax public sealed record ZstdCompressionAlgorithm : CompressionAlgorithmBase, IStatusProvider, IEquatable<CompressionAlgorithmBase>, IEquatable<ZstdCompressionAlgorithm> Fields | Edit this page View Source ALGORITHM_NAME Algorithm name Declaration public const string ALGORITHM_NAME = \"zstd\" Field Value Type Description string | Edit this page View Source ALGORITHM_VALUE Algorithm value Declaration public const int ALGORITHM_VALUE = 3 Field Value Type Description int | Edit this page View Source DISPLAY_NAME Algorithm display name Declaration public const string DISPLAY_NAME = \"zstd\" Field Value Type Description string | Edit this page View Source PROFILE_ZSTD_RAW zstd raw (without header) profile key Declaration public const string PROFILE_ZSTD_RAW = \"ZSTD_RAW\" Field Value Type Description string Properties | Edit this page View Source DisplayName Algorithm display name Declaration public override string DisplayName { get; } Property Value Type Description string Overrides wan24.Compression.CompressionAlgorithmBase.DisplayName | Edit this page View Source Instance Singleton instance Declaration public static ZstdCompressionAlgorithm Instance { get; } Property Value Type Description ZstdCompressionAlgorithm Methods | Edit this page View Source CreateCompressionStream(Stream, CompressionOptions) Create a compression stream Declaration protected override Stream CreateCompressionStream(Stream compressedTarget, CompressionOptions options) Parameters Type Name Description Stream compressedTarget Target stream CompressionOptions options Options Returns Type Description Stream Compression stream Overrides CompressionAlgorithmBase.CreateCompressionStream(Stream, CompressionOptions) | Edit this page View Source CreateDecompressionStream(Stream, CompressionOptions) Create a decompression stream Declaration protected override Stream CreateDecompressionStream(Stream source, CompressionOptions options) Parameters Type Name Description Stream source CompressionOptions options Options Returns Type Description Stream Decompression stream Overrides CompressionAlgorithmBase.CreateDecompressionStream(Stream, CompressionOptions) Implements wan24.Core.IStatusProvider IEquatable<T> IEquatable<T>"
+  },
+  "api/wan24.Compression.Zstd.html": {
+    "href": "api/wan24.Compression.Zstd.html",
+    "title": "Namespace wan24.Compression.Zstd | wan24-Compression-Zstd",
+    "keywords": "Namespace wan24.Compression.Zstd Classes Bootstrap Bootstrapper ZstdCompressionAlgorithm zstd compression algorithm"
+  },
+  "articles/intro.html": {
+    "href": "articles/intro.html",
+    "title": "Add your introductions here! | wan24-Compression-Zstd",
+    "keywords": "Add your introductions here!"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "wan24-Compression-Zstd | wan24-Compression-Zstd",
+    "keywords": "wan24-Compression-Zstd This library adopts ZstdSharp.Port to wan24-Compression and extends the wan24-Compression library with these algorithms: Algorithm ID Name zstd 3 zstd How to get it This library is available as NuGet package. Usage In case you don't use the wan24-Core bootstrapper logic, you need to initialize the LZ4 extension first, before you can use it: wan24.Compression.Zstd.Bootstrapper.Boot(); This will register the compression algorithm to the wan24-Compression library."
+  }
+}
