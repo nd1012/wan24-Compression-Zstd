@@ -9,7 +9,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageId>wan24-Compression-Zstd</PackageId>
     <Title>wan24-Compression-Zstd</Title>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Authors>nd1012</Authors>
     <Company>Andreas Zimmermann, wan24.de</Company>
     <Product>wan24-Compression-Zstd</Product>
@@ -32,7 +32,7 @@
   </Target>
 
   <ItemGroup>
-    <PackageReference Include="wan24-Compression" Version="2.12.0" Condition="'$(Configuration)' != 'Trunk'" />
+    <PackageReference Include="wan24-Compression" Version="2.13.0" Condition="'$(Configuration)' != 'Trunk'" />
     <PackageReference Include="ZstdSharp.Port" Version="0.8.1" />
   </ItemGroup>
 
